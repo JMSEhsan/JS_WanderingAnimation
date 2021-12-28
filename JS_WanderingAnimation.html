@@ -7,8 +7,7 @@
   height: 400px;
   position: relative;
   background: azure;
-
-  
+ 
 }
 
 #myAnimation {
@@ -16,7 +15,6 @@
   height: 50px;
   position: absolute;
   background-color: rgb(94, 255, 0);
-
 
 }
 
@@ -34,11 +32,8 @@
 
 <script>
 
-
-
 var id = null;
 function myMove() {
-
     
   var elem = document.getElementById("myAnimation");   
   var posx = 0;
@@ -57,11 +52,7 @@ function myMove() {
   var r2 = ramdomMkr();
 
   function frame() {
-    if (posx >= 350 - 4 ){//|| posy == 350 - 350 % r2 || posx == - 350 % r1  || posy == - 350 % r2) {
-     // clearInterval(id);
-    
-    
-    //posy =  posy;
+    if (posx >= 350 - 4 ){
     
       posy = posy + r2 / r1 * (350 - posx);
       elem.style.left = 350 + 'px'; 
@@ -69,28 +60,21 @@ function myMove() {
 
       posx = - posx;
 
-    r1 = ramdomMkr();
-    r2 = ramdomMkr();
+      r1 = ramdomMkr();
+      r2 = ramdomMkr();
     }
 
     else if ( posy >= 350 -4){
-
-    //posx = - posx;
-    posx = posx + r1 / r2 * (350 - posy);
+      posx = posx + r1 / r2 * (350 - posy);
       elem.style.left = posx + 'px'; 
       elem.style.top = 350 + 'px'; 
 
+      posy = -posy;
 
-    posy = -posy;
-
-    r1 = ramdomMkr();
-    r2 = ramdomMkr();
-    
+      r1 = ramdomMkr();
+      r2 = ramdomMkr();
     }
 
-    //r = Math.floor(Math.random() * 1);
-       
-     
     else {
        
       posx = posx + r1; 
