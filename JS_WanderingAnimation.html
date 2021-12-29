@@ -49,12 +49,15 @@
 <!-- <div id ="myContainer0">
   <div id ="myAnimation0"></div>
   </div> -->
-<p id = "opposx"></p>
-<p id = "opposy"></p>
-<p id = "opelmx"></p>
-<p id = "opelmy"></p>
-<p id = "opr1"></p>
-<p id = "opr2"></p>
+<!-- <p id = "opposx"></p>
+<p id = "opposy"></p> -->
+
+<p>Position x: <span id="posx"> px</span></p> 
+<p>Position x: <span id="posy"> px</span></p> 
+
+
+<!-- <p id = "opr1"></p>
+<p id = "opr2"></p> -->
 
 
   
@@ -133,8 +136,8 @@ function myMove() {
       while(posx < 350){
       posx++;
       posy = posy + r2 / r1 * (350 - posx);
-      elem.style.left = posx + 'px'; 
-      elem.style.top = posy + 'px'; 
+      elem.style.left = Math.abs(posx) + 'px'; 
+      elem.style.top = Math.abs(posy) + 'px'; 
       }
 
       posx = -350;
@@ -148,8 +151,8 @@ function myMove() {
      while(posy < 350){
       posy++;
       posx = posx + r1 / r2 * (350 - posy);
-      elem.style.left = posx + 'px'; 
-      elem.style.top = posy + 'px'; 
+      elem.style.left = Math.abs(posx) + 'px'; 
+      elem.style.top = Math.abs(posy) + 'px'; 
      }
 
       posy = -350;
@@ -164,8 +167,8 @@ function myMove() {
     while(Math.abs(posx) < r1 && posx < 0){
       posx++;
       posy = posy + r2 / r1 * Math.abs(posx);
-      elem.style.left = posx + 'px'; 
-    elem.style.top = posy + 'px'; 
+      elem.style.left = Math.abs(posx) + 'px'; 
+    elem.style.top = Math.abs(posy) + 'px'; 
     }
     
 
@@ -181,8 +184,8 @@ function myMove() {
      while(Math.abs(posy) < r2 && posy < 0){
       posy++;
       posx = posx + r1 / r2 * Math.abs(posy);
-      elem.style.left = posx + 'px'; 
-      elem.style.top = posy + 'px'; 
+      elem.style.left = Math.abs(posx) + 'px'; 
+      elem.style.top = Math.abs(posy) + 'px'; 
      }
       posy = 0;
 
@@ -198,12 +201,12 @@ function myMove() {
       elem.style.top = Math.abs(posy) + 'px'; 
     }
     
-    document.getElementById("opposx").innerHTML=posx;
-    document.getElementById("opposy").innerHTML=posy;
-    document.getElementById("opelmx").innerHTML=elem.style.left;
-    document.getElementById("opelmy").innerHTML=elem.style.top;
-    document.getElementById("opr1").innerHTML=r1;
-    document.getElementById("opr2").innerHTML=r2;
+    document.getElementById("opposx").innerHTML = Math.abs(posx);
+    document.getElementById("opposy").innerHTML = Math.abs(posy);
+   //document.getElementById("opelmx").innerHTML=elem.style.left;
+   //document.getElementById("opelmy").innerHTML=elem.style.top;
+   // document.getElementById("opr1").innerHTML=r1;
+   // document.getElementById("opr2").innerHTML=r2;
   }
 }
 
