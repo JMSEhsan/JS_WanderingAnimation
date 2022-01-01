@@ -144,217 +144,216 @@ function myMove() {
 
     if (posx0 > (370 - r10)){
 
-    while(posx0 < 370 && (370 - posx0) >= 1){
-    posx0++;
-    posy0 = posy0 + r20 / r10 * (370 - posx0);
-    elem0.style.left = Math.abs(posx0) + 'px';
-    elem0.style.top = Math.abs(posy0) + 'px';
-    }
+      while(posx0 < 370 && (370 - posx0) >= 1){
+      posx0++;
+      posy0 = posy0 + r20 / r10;
+      elem0.style.left = Math.abs(posx0) + 'px';
+      elem0.style.top = Math.abs(posy0) + 'px';
+      }
 
-    posx0 = -370;
+      posx0 = -370;
 
-    r10 = ramdomMkr();
-    r20 = ramdomMkr();
-    }
+      r10 = ramdomMkr();
+      r20 = ramdomMkr();
+      }
 
     else if (posy0 > (370 - r20) ){
 
-    while(posy0 < 370 && (370 - posy0) >= 1){
-      posy0++;
-      posx0 = posx0 + r10 / r20 * (370 - posy0);
-      elem0.style.left = Math.abs(posx0) + 'px';
-      elem0.style.top = Math.abs(posy0) + 'px';
-    }
+      while(posy0 < 370 && (370 - posy0) >= 1){
+        posy0++;
+        posx0 = posx0 + r10 / r20;
+        elem0.style.left = Math.abs(posx0) + 'px';
+        elem0.style.top = Math.abs(posy0) + 'px';
+      }
 
-    posy0 = -370;
+      posy0 = -370;
 
-    r10 = ramdomMkr();
-    r20 = ramdomMkr();
-    }
+      r10 = ramdomMkr();
+      r20 = ramdomMkr();
+      }
 
     else if (Math.abs(posx0) <  r10 &&  posx0 < 0){
 
-    while(Math.abs(posx0) < r10 && posx0 < 0){
-      posx0++;
-      posy0 = posy0 + r20 / r10 * Math.abs(posx0);
-      elem0.style.left = Math.abs(posx0) + 'px';
-      elem0.style.top = Math.abs(posy0) + 'px';
-    }
+      while(Math.abs(posx0) < r10 && posx0 < 0){
+        posx0++;
+        posy0 = posy0 + r20 / r10;
+        elem0.style.left = Math.abs(posx0) + 'px';
+        elem0.style.top = Math.abs(posy0) + 'px';
+      }
 
-    posx0 = 0;
+      posx0 = 0;
 
-    r10 = ramdomMkr();
-    r20 = ramdomMkr();
-    }
+      r10 = ramdomMkr();
+      r20 = ramdomMkr();
+      }
 
     else if (Math.abs(posy0) <  r20   && posy0 < 0){
 
-    while(Math.abs(posy0) < r20 && posy0 < 0){
-    posy0++;
-    posx0 = posx0 + r10 / r20 * Math.abs(posy0);
-    elem0.style.left = Math.abs(posx0) + 'px';
-    elem0.style.top = Math.abs(posy0) + 'px';
-    }
-    posy0 = 0;
+      while(Math.abs(posy0) < r20 && posy0 < 0){
+      posy0++;
+      posx0 = posx0 + r10 / r20;
+      elem0.style.left = Math.abs(posx0) + 'px';
+      elem0.style.top = Math.abs(posy0) + 'px';
+      }
+      posy0 = 0;
 
-    r10 = ramdomMkr();
-    r20 = ramdomMkr();
-    }
+      r10 = ramdomMkr();
+      r20 = ramdomMkr();
+      }
 
     else {
-    posx0 = posx0 + r10;
-    posy0 = posy0 + r20;
-    elem0.style.left = Math.abs(posx0) + 'px';
-    elem0.style.top = Math.abs(posy0) + 'px';
-    }
+      posx0 = posx0 + r10;
+      posy0 = posy0 + r20;
+      elem0.style.left = Math.abs(posx0) + 'px';
+      elem0.style.top = Math.abs(posy0) + 'px';
+      }
 
-    document.getElementById("posx0").innerHTML = Math.round(Math.abs(posx0));
-    document.getElementById("posy0").innerHTML = Math.round(Math.abs(posy0));
+      document.getElementById("posx0").innerHTML = Math.round(Math.abs(posx0));
+      document.getElementById("posy0").innerHTML = Math.round(Math.abs(posy0));
 
 
     // 2nd animation
 
     if (posx > (370 - r1)){
 
-    while(posx < 370 && (370 - posx) >= 1){
-    posx++;
-    posy = posy + r2 / r1 * (370 - posx);
-    elem.style.left = Math.abs(posx) + 'px';
-    elem.style.top = Math.abs(posy) + 'px';
-    }
+      while(posx < 370 && (370 - posx) >= 1){
+      posx++;
+      posy = posy + r2 / r1;
+      elem.style.left = Math.abs(posx) + 'px';
+      elem.style.top = Math.abs(posy) + 'px';
+      }
 
-    posx = -370;
+      posx = -370;
 
-    r1 = ramdomMkr();
-    r2 = ramdomMkr();
-    }
+      r1 = ramdomMkr();
+      r2 = ramdomMkr();
+      }
 
     else if (posy > (370 - r2) ){
 
-    while(posy < 370 && (370 - posy) >= 1){
-      posy++;
-      posx = posx + r1 / r2 * (370 - posy);
-      elem.style.left = Math.abs(posx) + 'px';
-      elem.style.top = Math.abs(posy) + 'px';
-    }
+      while(posy < 370 && (370 - posy) >= 1){
+        posy++;
+        posx = posx + r1 / r2;
+        elem.style.left = Math.abs(posx) + 'px';
+        elem.style.top = Math.abs(posy) + 'px';
+      }
 
-    posy = -370;
+      posy = -370;
 
-    r1 = ramdomMkr();
-    r2 = ramdomMkr();
-    }
+      r1 = ramdomMkr();
+      r2 = ramdomMkr();
+      }
 
     else if (Math.abs(posx) <  r1 &&  posx < 0){
 
-    while(Math.abs(posx) < r1 && posx < 0){
-      posx++;
-      posy = posy + r2 / r1 * Math.abs(posx);
-      elem.style.left = Math.abs(posx) + 'px';
-      elem.style.top = Math.abs(posy) + 'px';
-    }
+      while(Math.abs(posx) < r1 && posx < 0){
+        posx++;
+        posy = posy + r2 / r1;
+        elem.style.left = Math.abs(posx) + 'px';
+        elem.style.top = Math.abs(posy) + 'px';
+      }
 
-    posx = 0;
+      posx = 0;
 
-    r1 = ramdomMkr();
-    r2 = ramdomMkr();
-    }
+      r1 = ramdomMkr();
+      r2 = ramdomMkr();
+      }
 
     else if (Math.abs(posy) <  r2   && posy < 0){
 
-    while(Math.abs(posy) < r2 && posy < 0){
-    posy++;
-    posx = posx + r1 / r2 * Math.abs(posy);
-    elem.style.left = Math.abs(posx) + 'px';
-    elem.style.top = Math.abs(posy) + 'px';
-    }
-    posy = 0;
+      while(Math.abs(posy) < r2 && posy < 0){
+      posy++;
+      posx = posx + r1 / r2;
+      elem.style.left = Math.abs(posx) + 'px';
+      elem.style.top = Math.abs(posy) + 'px';
+      }
+      posy = 0;
 
-    r1 = ramdomMkr();
-    r2 = ramdomMkr();
-    }
+      r1 = ramdomMkr();
+      r2 = ramdomMkr();
+      }
 
     else {
 
-    posx = posx + r1;
-    posy = posy + r2;
-    elem.style.left = Math.abs(posx) + 'px';
-    elem.style.top = Math.abs(posy) + 'px';
-    }
+      posx = posx + r1;
+      posy = posy + r2;
+      elem.style.left = Math.abs(posx) + 'px';
+      elem.style.top = Math.abs(posy) + 'px';
+      }
 
-    document.getElementById("posx").innerHTML = Math.round(Math.abs(posx));
-    document.getElementById("posy").innerHTML = Math.round(Math.abs(posy));
+      document.getElementById("posx").innerHTML = Math.round(Math.abs(posx));
+      document.getElementById("posy").innerHTML = Math.round(Math.abs(posy));
 
     // 3rd animation 
 
     if (posx2 > (370 - r12)){
 
-    while(posx2 < 370 && (370 - posx2) >= 1){
-    posx2++;
-    posy2 = posy2 + r22 / r12 * (370 - posx2);
-    elem2.style.left = Math.abs(posx2) + 'px';
-    elem2.style.top = Math.abs(posy2) + 'px';
-    }
+      while(posx2 < 370 && (370 - posx2) >= 1){
+      posx2++;
+      posy2 = posy2 + r22 / r12;
+      elem2.style.left = Math.abs(posx2) + 'px';
+      elem2.style.top = Math.abs(posy2) + 'px';
+      }
 
-    posx2 = -370;
+      posx2 = -370;
 
-    r12 = ramdomMkr();
-    r22 = ramdomMkr();
-    }
+      r12 = ramdomMkr();
+      r22 = ramdomMkr();
+      }
 
     else if (posy2 > (370 - r22) ){
 
-    while(posy2 < 370 && (370 - posy2) >= 1){
-      posy2++;
-      posx2 = posx2 + r12 / r22 * (370 - posy2);
-      elem2.style.left = Math.abs(posx2) + 'px';
-      elem2.style.top = Math.abs(posy2) + 'px';
-    }
+      while(posy2 < 370 && (370 - posy2) >= 1){
+        posy2++;
+        posx2 = posx2 + r12 / r22;
+        elem2.style.left = Math.abs(posx2) + 'px';
+        elem2.style.top = Math.abs(posy2) + 'px';
+      }
 
-    posy2 = -370;
+      posy2 = -370;
 
-    r12 = ramdomMkr();
-    r22 = ramdomMkr();
-    }
+      r12 = ramdomMkr();
+      r22 = ramdomMkr();
+      }
 
     else if (Math.abs(posx2) <  r12 &&  posx2 < 0){
 
-    while(Math.abs(posx2) < r12 && posx2 < 0){
-      posx2++;
-      posy2 = posy2 + r22 / r12 * Math.abs(posx2);
-      elem2.style.left = Math.abs(posx2) + 'px';
-      elem2.style.top = Math.abs(posy2) + 'px';
-    }
+      while(Math.abs(posx2) < r12 && posx2 < 0){
+        posx2++;
+        posy2 = posy2 + r22 / r12;
+        elem2.style.left = Math.abs(posx2) + 'px';
+        elem2.style.top = Math.abs(posy2) + 'px';
+      }
 
-    posx2 = 0;
+      posx2 = 0;
 
-    r12 = ramdomMkr();
-    r22 = ramdomMkr();
-    }
+      r12 = ramdomMkr();
+      r22 = ramdomMkr();
+      }
 
     else if (Math.abs(posy2) <  r22   && posy2 < 0){
 
-    while(Math.abs(posy2) < r22 && posy2 < 0){
-    posy2++;
-    posx2 = posx2 + r12 / r22 * Math.abs(posy2);
-    elem2.style.left = Math.abs(posx2) + 'px';
-    elem2.style.top = Math.abs(posy2) + 'px';
-    }
-    posy2 = 0;
+      while(Math.abs(posy2) < r22 && posy2 < 0){
+      posy2++;
+      posx2 = posx2 + r12 / r22;
+      elem2.style.left = Math.abs(posx2) + 'px';
+      elem2.style.top = Math.abs(posy2) + 'px';
+      }
+      posy2 = 0;
 
-    r12 = ramdomMkr();
-    r22 = ramdomMkr();
-    }
+      r12 = ramdomMkr();
+      r22 = ramdomMkr();
+      }
 
     else {
-    posx2 = posx2 + r12;
-    posy2 = posy2 + r22;
-    elem2.style.left = Math.abs(posx2) + 'px';
-    elem2.style.top = Math.abs(posy2) + 'px';
-    }
+      posx2 = posx2 + r12;
+      posy2 = posy2 + r22;
+      elem2.style.left = Math.abs(posx2) + 'px';
+      elem2.style.top = Math.abs(posy2) + 'px';
+      }
 
-    document.getElementById("posx2").innerHTML = Math.round(Math.abs(posx2));
-    document.getElementById("posy2").innerHTML = Math.round(Math.abs(posy2));
-
+      document.getElementById("posx2").innerHTML = Math.round(Math.abs(posx2));
+      document.getElementById("posy2").innerHTML = Math.round(Math.abs(posy2));
   }
 }
 
