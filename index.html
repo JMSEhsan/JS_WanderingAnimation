@@ -215,6 +215,10 @@ function myMove() {
       posx0 = 0;
 
       r10 = ramdomMkr();
+      while(r10 == 0){
+        r10 = ramdomMkr();
+      }
+      
       r20 = ramdomMkr();
       }
 
@@ -229,8 +233,12 @@ function myMove() {
 
       posy0 = 0;
 
-      r10 = ramdomMkr();
       r20 = ramdomMkr();
+      while(r20 == 0){
+        r20 = ramdomMkr();
+      }
+      r10 = ramdomMkr();
+      
       }
 
     else {
@@ -296,6 +304,10 @@ function myMove() {
       posx = 0;
 
       r1 = ramdomMkr();
+      while(r1 == 0){
+        r1 = ramdomMkr();
+      }
+      
       r2 = ramdomMkr();
       }
 
@@ -307,10 +319,15 @@ function myMove() {
       elem.style.left = Math.abs(posx) + 'px';
       elem.style.top = Math.abs(posy) + 'px';
       }
-      posy = 0;
 
-      r1 = ramdomMkr();
+      posy = 0;
+      
       r2 = ramdomMkr();
+      while(r2 == 0){
+        r2 = ramdomMkr();
+      }
+
+      r1 = ramdomMkr();      
       }
 
     else {
@@ -376,6 +393,10 @@ function myMove() {
       posx2 = 0;
 
       r12 = ramdomMkr();
+      while(r12 == 0){
+        r12 = ramdomMkr();
+      }
+      
       r22 = ramdomMkr();
       }
 
@@ -387,10 +408,15 @@ function myMove() {
       elem2.style.left = Math.abs(posx2) + 'px';
       elem2.style.top = Math.abs(posy2) + 'px';
       }
+
       posy2 = 0;
 
-      r12 = ramdomMkr();
       r22 = ramdomMkr();
+      while(r22 == 0){
+        r22 = ramdomMkr();
+      }
+
+      r12 = ramdomMkr();      
       }
 
     else {
