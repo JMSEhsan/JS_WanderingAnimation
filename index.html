@@ -108,6 +108,11 @@
 var id = null;
 function myMove() {
 
+  function ramdomMkr(){
+  var r =  Math.floor(Math.random() * 10);
+  return r;
+  }
+
   var elem0 = document.getElementById("myAnimation0");
   var posx0 = ramdomMkr() * 370/9;
   var posy0 = ramdomMkr() * 370/9;
@@ -129,11 +134,6 @@ function myMove() {
   clearInterval(id);
   id = setInterval(frame, 50);
 
-
-  function ramdomMkr(){
-  var r =  Math.floor(Math.random() * 10);
-  return r;
-  }
 
   var r1 = ramdomMkr();
   var r2 = ramdomMkr();
