@@ -174,10 +174,14 @@ function myMove() {
       elem0.style.top = Math.abs(posy0) + 'px';
       }
 
-      posx0 = -370;
-
       r10 = ramdomMkr();
+      while(posx0 == 370 && r10 == 0){
+        r10 = ramdomMkr();
+      }
+    
       r20 = ramdomMkr();
+
+      posx0 = -370;
       }
 
     else if (posy0 > (370 - r20) || posy0 == 370){
@@ -189,10 +193,14 @@ function myMove() {
         elem0.style.top = Math.abs(posy0) + 'px';
       }
 
-      posy0 = -370;
-
-      r10 = ramdomMkr();
       r20 = ramdomMkr();
+      while(posy0 == 370 && r20 == 0){
+        r20 = ramdomMkr();
+      }
+
+      r10 = ramdomMkr();      
+
+      posy0 = -370;
       }
 
     else if (Math.abs(posx0) < r10 && posx0 < 0){
@@ -247,11 +255,15 @@ function myMove() {
       elem.style.top = Math.abs(posy) + 'px';
       }
 
-      posx = -370;
-
       r1 = ramdomMkr();
-      r2 = ramdomMkr();
+      while(posx == 370 && r1 == 0){
+        r1 = ramdomMkr();
       }
+            
+      r2 = ramdomMkr();
+
+      posx = -370;
+      }      
 
     else if (posy > (370 - r2) || posy == 370){
 
@@ -261,11 +273,15 @@ function myMove() {
         elem.style.left = Math.abs(posx) + 'px';
         elem.style.top = Math.abs(posy) + 'px';
       }
-
-      posy = -370;
-
-      r1 = ramdomMkr();
+      
       r2 = ramdomMkr();
+      while (posy == 370 && r2 == 0){
+        r2 = ramdomMkr();
+      }
+ 
+      r1 = ramdomMkr();
+ 
+      posy = -370;
       }
 
     else if (Math.abs(posx) < r1 && posx < 0){
@@ -283,7 +299,7 @@ function myMove() {
       r2 = ramdomMkr();
       }
 
-    else if (Math.abs(posy) <  r2   && posy < 0){
+    else if (Math.abs(posy) < r2 && posy < 0){
 
       while(Math.abs(posy) < r2 && posy < 0){
       posy++;
@@ -319,10 +335,14 @@ function myMove() {
       elem2.style.top = Math.abs(posy2) + 'px';
       }
 
-      posx2 = -370;
-
       r12 = ramdomMkr();
+      while(posy2 == 370 && r12 == 0){
+        r12 = ramdomMkr();
+      }
+      
       r22 = ramdomMkr();
+
+      posx2 = -370;
       }
 
     else if (posy2 > (370 - r22) || posy2 == 370){
@@ -333,11 +353,15 @@ function myMove() {
         elem2.style.left = Math.abs(posx2) + 'px';
         elem2.style.top = Math.abs(posy2) + 'px';
       }
-
-      posy2 = -370;
+      
+      r22 = ramdomMkr();
+      while(posy2 == 370 && r22 == 0){
+        r22 = ramdomMkr();
+      }
 
       r12 = ramdomMkr();
-      r22 = ramdomMkr();
+
+      posy2 = -370;
       }
 
     else if (Math.abs(posx2) < r12 && posx2 < 0){
@@ -355,7 +379,7 @@ function myMove() {
       r22 = ramdomMkr();
       }
 
-    else if (Math.abs(posy2) <  r22   && posy2 < 0){
+    else if (Math.abs(posy2) < r22 && posy2 < 0){
 
       while(Math.abs(posy2) < r22 && posy2 < 0){
       posy2++;
