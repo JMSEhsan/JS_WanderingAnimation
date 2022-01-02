@@ -107,12 +107,7 @@
 //var id = null;
 function myMove() {
 
-  function ramdomMkr(){
-  var r =  Math.floor(Math.random() * 10);
-  return r;
-  }
-
-  var elem0 = document.getElementById("myAnimation0");
+    var elem0 = document.getElementById("myAnimation0");
   var posx0 = ramdomMkr() * 370/9;
   var posy0 = ramdomMkr() * 370/9;
   elem0.style.left = posx0 + 'px';
@@ -156,6 +151,10 @@ function myMove() {
     r22 = ramdomMkr();
   }
 
+  function ramdomMkr(){
+  var r =  Math.floor(Math.random() * 10);
+  return r;
+  }
   
   //clearInterval(id);
   var id = setInterval(frame, 50);
