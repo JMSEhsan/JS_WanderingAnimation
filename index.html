@@ -51,7 +51,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  background-color: rgb(75, 224, 82);
+  background-color: rgb(252, 245, 157);
 }
 
 #myContainer2HD {
@@ -77,7 +77,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  background-color: rgb(36, 203, 209);
+  background-color: rgb(243, 216, 241);
 }
 
 </style>
@@ -113,16 +113,15 @@ function myMove() {
   var posy0 = ramdomMkr() * 370/9;
   elem0.style.left = posx0 + 'px';
   elem0.style.top = posy0 + 'px';
-  
-  
-  
-
+    
+  document.getElementById("myAnimation").style.backgroundColor = "rgb(75, 224, 82)";
   var elem = document.getElementById("myAnimation");
   var posx = ramdomMkr() * 370/9;
   var posy = ramdomMkr() * 370/9;
   elem.style.left = posx + 'px';
   elem.style.top = posy + 'px';
 
+  document.getElementById("myAnimation2").style.backgroundColor = "rgb(36, 203, 209)";
   var elem2 = document.getElementById("myAnimation2");
   var posx2 = ramdomMkr() * 370/9;
   var posy2 = ramdomMkr() * 370/9;
