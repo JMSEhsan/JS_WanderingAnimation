@@ -110,20 +110,20 @@ function myMove() {
   var elem0 = document.getElementById("myAnimation0");
   var posx0 = ramdomMkr() * 370/9;
   var posy0 = ramdomMkr() * 370/9;
-  elem0.style.left = Math.abs(posx0) + 'px';
-  elem0.style.top = Math.abs(posy0) + 'px';
+  elem0.style.left = posx0 + 'px';
+  elem0.style.top = posy0 + 'px';
 
   var elem = document.getElementById("myAnimation");
   var posx = ramdomMkr() * 370/9;
   var posy = ramdomMkr() * 370/9;
-  elem.style.left = Math.abs(posx) + 'px';
-  elem.style.top = Math.abs(posy) + 'px';
+  elem.style.left = posx + 'px';
+  elem.style.top = posy + 'px';
 
   var elem2 = document.getElementById("myAnimation2");
   var posx2 = ramdomMkr() * 370/9;
   var posy2 = ramdomMkr() * 370/9;
-  elem2.style.left = Math.abs(posx2) + 'px';
-  elem2.style.top = Math.abs(posy2) + 'px';
+  elem2.style.left = posx2 + 'px';
+  elem2.style.top = posy2 + 'px';
 
   clearInterval(id);
   id = setInterval(frame, 50);
