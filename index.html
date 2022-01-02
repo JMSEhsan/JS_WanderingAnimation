@@ -106,12 +106,14 @@
 
 //var id = null;
 function myMove() {
-
-    var elem0 = document.getElementById("myAnimation0");
+  
+  var elem0 = document.getElementById("myAnimation0");
   var posx0 = ramdomMkr() * 370/9;
   var posy0 = ramdomMkr() * 370/9;
   elem0.style.left = posx0 + 'px';
   elem0.style.top = posy0 + 'px';
+  //document.getElementById("myAnimation0").style.color = "black";
+  
   
 
   var elem = document.getElementById("myAnimation");
@@ -163,7 +165,7 @@ function myMove() {
 
     //1st animation
 
-    if (posx0 >= (370 - r10)){
+    if (posx0 > (370 - r10) || posx0 == 370){
 
       while(posx0 < 370 && (370 - posx0) >= 1){
       posx0++;
@@ -178,7 +180,7 @@ function myMove() {
       r20 = ramdomMkr();
       }
 
-    else if (posy0 >= (370 - r20) ){
+    else if (posy0 > (370 - r20) || posy0 == 370){
 
       while(posy0 < 370 && (370 - posy0) >= 1){
         posy0++;
@@ -193,7 +195,7 @@ function myMove() {
       r20 = ramdomMkr();
       }
 
-    else if (Math.abs(posx0) <  r10 &&  posx0 < 0){
+    else if (Math.abs(posx0) < r10 && posx0 < 0){
 
       while(Math.abs(posx0) < r10 && posx0 < 0){
         posx0++;
@@ -236,7 +238,7 @@ function myMove() {
 
     // 2nd animation
 
-    if (posx >= (370 - r1)){
+    if (posx > (370 - r1) || posx == 370){
 
       while(posx < 370 && (370 - posx) >= 1){
       posx++;
@@ -251,7 +253,7 @@ function myMove() {
       r2 = ramdomMkr();
       }
 
-    else if (posy >= (370 - r2)){
+    else if (posy > (370 - r2) || posy == 370){
 
       while(posy < 370 && (370 - posy) >= 1){
         posy++;
@@ -266,7 +268,7 @@ function myMove() {
       r2 = ramdomMkr();
       }
 
-    else if (Math.abs(posx) <  r1 &&  posx < 0){
+    else if (Math.abs(posx) < r1 && posx < 0){
 
       while(Math.abs(posx) < r1 && posx < 0){
         posx++;
@@ -308,7 +310,7 @@ function myMove() {
 
     // 3rd animation 
 
-    if (posx2 > (370 - r12)){
+    if (posx2 > (370 - r12) || posx2 == 370){
 
       while(posx2 < 370 && (370 - posx2) >= 1){
       posx2++;
@@ -323,7 +325,7 @@ function myMove() {
       r22 = ramdomMkr();
       }
 
-    else if (posy2 > (370 - r22) ){
+    else if (posy2 > (370 - r22) || posy2 == 370){
 
       while(posy2 < 370 && (370 - posy2) >= 1){
         posy2++;
@@ -338,7 +340,7 @@ function myMove() {
       r22 = ramdomMkr();
       }
 
-    else if (Math.abs(posx2) <  r12 &&  posx2 < 0){
+    else if (Math.abs(posx2) < r12 && posx2 < 0){
 
       while(Math.abs(posx2) < r12 && posx2 < 0){
         posx2++;
