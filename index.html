@@ -117,6 +117,7 @@ function myMove() {
   var posy0 = ramdomMkr() * 370/9;
   elem0.style.left = posx0 + 'px';
   elem0.style.top = posy0 + 'px';
+  
 
   var elem = document.getElementById("myAnimation");
   var posx = ramdomMkr() * 370/9;
@@ -130,10 +131,7 @@ function myMove() {
   elem2.style.left = posx2 + 'px';
   elem2.style.top = posy2 + 'px';
 
-  //clearInterval(id);
-  var id = setInterval(frame, 30);
-
-
+  
   var r1 = ramdomMkr();
   var r2 = ramdomMkr();
 
@@ -152,10 +150,13 @@ function myMove() {
 
   var r12 = ramdomMkr();
   var r22 = ramdomMkr();
+  
   while (r12 == 0 && r22 == 0){
     r12 = ramdomMkr();
     r22 = ramdomMkr();
   }
+
+  
 
   function frame() {
 
@@ -375,6 +376,9 @@ function myMove() {
       document.getElementById("posx2").innerHTML = Math.round(Math.abs(posx2));
       document.getElementById("posy2").innerHTML = Math.round(Math.abs(posy2));
   }
+
+  //clearInterval(id);
+  var id = setInterval(frame, 50);
 }
 
 </script>
