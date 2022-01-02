@@ -157,6 +157,8 @@ function myMove() {
   }
 
   
+  //clearInterval(id);
+  var id = setInterval(frame, 50);
 
   function frame() {
 
@@ -377,8 +379,6 @@ function myMove() {
       document.getElementById("posy2").innerHTML = Math.round(Math.abs(posy2));
   }
 
-  //clearInterval(id);
-  var id = setInterval(frame, 50);
 }
 
 </script>
