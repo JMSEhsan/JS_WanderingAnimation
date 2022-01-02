@@ -108,35 +108,54 @@ var id = null;
 function myMove() {
 
   var elem0 = document.getElementById("myAnimation0");
-  var posx0 = 0;
-  var posy0 = 0;
+  var posx0 = ramdomMkr() * 370/9;
+  var posy0 = ramdomMkr() * 370/9;
+  elem0.style.left = Math.abs(posx0) + 'px';
+  elem0.style.top = Math.abs(posy0) + 'px';
 
   var elem = document.getElementById("myAnimation");
-  var posx = 0;
-  var posy = 0;
+  var posx = ramdomMkr() * 370/9;
+  var posy = ramdomMkr() * 370/9;
+  elem.style.left = Math.abs(posx) + 'px';
+  elem.style.top = Math.abs(posy) + 'px';
 
   var elem2 = document.getElementById("myAnimation2");
-  var posx2 = 0;
-  var posy2 = 0;
+  var posx2 = ramdomMkr() * 370/9;
+  var posy2 = ramdomMkr() * 370/9;
+  elem2.style.left = Math.abs(posx2) + 'px';
+  elem2.style.top = Math.abs(posy2) + 'px';
 
   clearInterval(id);
   id = setInterval(frame, 50);
 
 
   function ramdomMkr(){
-  var r =  Math.floor(Math.random() * 9 + 1);
+  var r =  Math.floor(Math.random() * 10);
   return r;
   }
 
   var r1 = ramdomMkr();
   var r2 = ramdomMkr();
 
+  while (r1 == 0 && r2 == 0){
+    r1 = ramdomMkr();
+    r2 = ramdomMkr();
+  }
+  
   var r10 = ramdomMkr();
   var r20 = ramdomMkr();
 
+  while (r10 == r20 && (r10 == 0 || r20 == 0)){
+    r10 = ramdomMkr();
+    r20 = ramdomMkr();
+  }
+
   var r12 = ramdomMkr();
   var r22 = ramdomMkr();
-
+  while (r12 == r22 && (r12 == 0 || r22 == 0)){
+    r12 = ramdomMkr();
+    r22 = ramdomMkr();
+  }
 
   function frame() {
 
