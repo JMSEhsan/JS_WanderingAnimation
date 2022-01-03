@@ -160,11 +160,8 @@ function myMove() {
   }
 
   function ramdomMkr(){
-   var r = Math.random() * 10;  //Math.floor()
-   while (r > 0 && r < 0.05){
-     r = Math.random() * 10;
-   }
-   return r;
+    var r = Math.floor(Math.random() * 10);
+    return r;
   }
 
   //clearInterval(id);
