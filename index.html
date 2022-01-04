@@ -183,14 +183,14 @@ function myMove() {
     var r = (Math.random() * 10); //Math.floor()
     
     switch (x){
-    case 1:
-      return r;
-      break;
-    default:
-      while ( r > 0 && r < 0.05){              // limit infinitesimal random values
-      r = (Math.random() * 10); 
-      }
-    return r;
+      case 1:
+        return r;
+        break;
+      default:
+        while ( r > 0 && r < 0.05){              // limit infinitesimal random values
+        r = (Math.random() * 10); 
+        }
+        return r;
     }
   }
 
